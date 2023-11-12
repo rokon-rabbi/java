@@ -26,7 +26,9 @@ public class Main {
 //        System.out.println(obj.fact(x));
 
 // <============== power with stack size n=================>
+        PowerWithStn obj = new PowerWithStn();
 
+        System.out.println(obj.powerStackn(2, 4));
 
     }
 
