@@ -3,24 +3,27 @@ package LinkedList;
 public class LinkedList {
     //    initialization of node head elemnet
     Node head;
-//    method for insert node in specidfic position
+    //    method for insert node in specidfic position
 
     //    method for insert node at last
     public void add(int data, int pos) {
+        System.out.println(head);
 
         Node node = new Node(data);
-
+        System.out.println(node);
         if (pos == 0) {
-
+            System.out.println("0 pos"+head);
             node.next = head;
 
             head = node;
+            System.out.println("node"+head);
 
         } else {
             Node current = head;
+            System.out.println("else"+current);
 
             for (int i = 0; i < pos - 1 && current != null; i++) {
-
+                System.out.println(i+"iteration"+current);
                 current = current.next;
 
             }
@@ -32,7 +35,7 @@ public class LinkedList {
             }
 
             node.next = current.next;
-
+            System.out.println("last"+node);
             current.next = node;
 
         }
