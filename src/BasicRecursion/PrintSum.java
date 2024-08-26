@@ -1,13 +1,16 @@
 package BasicRecursion;
 
 public class PrintSum {
-    public void printSum(int x, int sum) {
+    public static void main(String[] args) {
+        printSum(5,0);
+    }
+    public static void printSum(int x, int sum) {
 
-        if (x == 0) {
-            System.out.println(sum);
+        if (sum > 10) {
+
             return;
         }
-        sum += x;
-        printSum(x - 1, sum);
+        System.out.println(5+" X "+sum+" = "+ 5*sum);
+        printSum(x, sum+1);
     }
 }
